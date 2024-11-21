@@ -1,39 +1,75 @@
 import React from 'react';
 import './App.css';
-
 import Student from "./Student"
 import UseStudentState from './UseStudentState';
+import ImageManipulation from './ImageManipulation';
 function App() {
   const h1=<h1>hello world</h1>;
 const mystyle={
   color:'yellow',
-  backgroundColor:'black'
-}
-  return (
-    // <div style={{backgroundColor:'blue'}}>
-    //   {h1}
-    //   <div style={mystyle}>
-    //     ABES ENGINEERING COLLEGE
-    //   </div>
-    //   <div>
-    //     <><Student college="ABES ENGG COLLEGE" name="suresh" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
-    //     <><Student college="ABES ENGG COLLEGE" name="suresh" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
-    //     <><Student college="ABES ENGG COLLEGE" name="suresh" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
-    //     <><Student college="ABES ENGG COLLEGE" name="suresh" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
-    //     <><Student college="ABES ENGG COLLEGE" name="suresh" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
-    //   </div>
-    // </div>
+  backgroundColor:'red'
 
-    <div>
-      <div>
-      <h2>hello using usestate hook</h2>
-    </div>
-    <div>
-      <UseStudentState/>
-    </div>
-    </div>
-      
-  );
 }
+
+
+// const stdata=[{
+//   college:"abesec",
+//   pic:<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png'></img>,
+//   name:"supriya",
+//   branch:"cse",
+//   section:'b'
+
+// },
+// {
+//   college:"abesec",
+//   pic:<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png'></img>,
+//   name:"supriya",
+//   branch:"cse",
+//   section:'b'},
+//   {
+//     college:"abesec",
+//     pic:<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png'></img>,
+//     name:"supriya",
+
+//     branch:"cse",
+//     section:'b',}
+
+
+// ]
+    return (
+      <div style={{marginLeft:"600px"}}>
+        <h2>hello using usestate</h2>
+        <div>
+          {/* <UseStudentState></UseStudentState> */}
+          <ImageManipulation/>
+        </div>
+      </div>
+      
+      // <div style={{backgroundColor:'tomato'}}>
+      //   {h1}
+      //    <div style={mystyle}>
+      //     ABES ENGINEERING COLLEGE
+      //   </div>
+      //   <div style={{display:'flex'}}>
+      //     {
+      //       stdata.map(
+      //         (ele)=>{
+      //          return <Student data={ele}></Student>
+
+      //         }
+      //       )
+      //     }
+          
+      //     {/* <><Student college="ABES ENGG COLLEGE" name="supriya" branch="cse" section="b" pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
+      //     <><Student college="ABES ENGG COLLEGE" name="supriya" branch="cse" section="b"pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
+      //     <><Student college="ABES ENGG COLLEGE" name="supriya" branch="cse" section="b"pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></>
+      //     <><Student college="ABES ENGG COLLEGE" name="supriya" branch="cse" section="b"pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height="100px"></img>}/></> */}
+          
+      //   </div> 
+      // </div>
+        
+    );
+}
+
  
 export default App;
